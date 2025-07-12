@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>boAt Products</title>
+  <link rel="stylesheet" href="buy.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h1>boAt Store</h1>
+    <div class="nav-right">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <div class="cart">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PRODUCT SECTION -->
+  <section class="products">
+    <h2>Smart Bands You Can Buy</h2>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/boat-xtend.jpg" alt="boAt Xtend Band" />
+        <h3>boAt Xtend Smart Band</h3>
+        <p>SpO2, Heart Rate, Sleep Tracking</p>
+        <span class="price">₹1,999</span>
+        <button class="btn-buy" onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/boat-wave.webp" alt="boAt Wave Beat" />
+        <h3>boAt Wave Beat</h3>
+        <p>AMOLED Display, IP68 Waterproof</p>
+        <span class="price">₹2,499</span>
+        <button class="btn-buy" onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/boar-matrix.webp" alt="boAt Matrix" />
+        <h3>boAt Matrix</h3>
+        <p>Bluetooth Calling, Fitness Tracker</p>
+        <span class="price">₹2,799</span>
+        <button class="btn-buy" onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/boat-storm.jpg" alt="boAt Storm" />
+        <h3>boAt Storm</h3>
+        <p>Large Touchscreen, Sleep Monitor</p>
+        <span class="price">₹1,799</span>
+        <button class="btn-buy" onclick="addToCart()">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    let count = 0;
+    function addToCart() {
+      count++;
+      document.getElementById("cart-count").textContent = count;
+    }
+  </script>
+
+</body>
+</html>
